@@ -8,6 +8,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import org.ease.socialplatform.enums.NotificationType;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
