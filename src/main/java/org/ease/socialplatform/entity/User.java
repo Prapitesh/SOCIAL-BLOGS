@@ -8,6 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
+import org.jspecify.annotations.Nullable;
 
 import java.time.LocalDateTime;
 
@@ -41,4 +42,12 @@ public class User {
 
     @UpdateTimestamp
     private LocalDateTime updatedAt;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public @Nullable String getPassword() {
+        return password;
+    }
 }
